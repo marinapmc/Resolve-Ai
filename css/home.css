@@ -308,10 +308,9 @@
     grid-template-columns: 1fr;
   }
 
+  /* Ilustração do hero só no desktop; no mobile o título vem primeiro */
   .hero-art {
-    order: -1;
-    max-width: 320px;
-    margin: 0 auto;
+    display: none;
   }
 
   .category-grid {

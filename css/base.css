@@ -1,11 +1,3 @@
-/* =========================================================
-   ResolveAí — base.css
-   Reset, variáveis de design, tipografia e componentes
-   reutilizáveis (botões, cards, nav, footer, badges, forms).
-   Todas as páginas importam este arquivo antes do CSS
-   específico da página.
-   ========================================================= */
-
 /* ---------- Reset básico ---------- */
 *,
 *::before,
@@ -51,7 +43,7 @@ button {
 
 /* ---------- Design tokens ---------- */
 :root {
-  /* Paleta — inspirada em Material Design, tema "serviços de confiança" */
+  /* Paleta */
   --color-primary: #2F6FED;
   --color-primary-dark: #1B4FC4;
   --color-primary-darker: #12388F;
@@ -132,9 +124,7 @@ small, .text-small {
 .text-accent { color: var(--color-accent); }
 .text-primary { color: var(--color-primary); }
 
-/* Ícones em SVG (sprite embutido no início de cada página) — sem dependência
-   de fontes externas, para garantir que o app renderize igual em
-   qualquer ambiente, mesmo offline. */
+/* Ícones em SVG (sprite embutido no início de cada página) */
 .icon {
   width: 20px;
   height: 20px;
@@ -456,8 +446,7 @@ small, .text-small {
   background: currentColor;
 }
 
-/* Quando o badge já carrega um ícone próprio (ex: "Verificado"),
-   dispensa o pontinho decorativo para não duplicar o indicador. */
+/* Quando o badge já carrega um ícone próprio */
 .badge:has(.icon)::before {
   display: none;
 }
